@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f1f5ff;
+    color: #222;
+}
+
+header {
+    background: #102a56;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background: #1d4ed8;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 12px;
+}
+
+.hero {
+    padding: 65px 20px;
+    text-align: center;
+    background: #dbeafe;
+}
+
+.hero h1 {
+    color: #123b82;
+    font-size: 36px;
+}
+
+button {
+    background: #1d4ed8;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+section {
+    padding: 35px 20px;
+    text-align: center;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    margin: 12px auto;
+    max-width: 500px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #ccd5e5;
+}
+
+footer {
+    background: #102a56;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Mobile Responsive Design */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 0;
+    }
+
+    header {
+        padding: 15px;
+    }
+
+    nav {
+        padding: 10px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 6px;
+        font-size: 14px;
+    }
+
+    .hero {
+        padding: 40px 15px;
+    }
+
+    .hero h1 {
+        font-size: 26px;
+    }
+
+    section {
+        padding: 25px 12px;
+    }
+
+    .card {
+        width: 95%;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    button {
+        max-width: 100%;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h2>My Portfolio</h2>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+
+<div class="hero" id="home">
+
+    <img src="images/profile.jpg"
+         alt="My Profile"
+         width="160"
+         style="border-radius:50%;">
+
+    <h1>Hello, I am Your Name</h1>
+
+    <h2>Web Developer</h2>
+
+    <p>Welcome to my personal portfolio website.</p>
+
+    <button onclick="document.getElementById('about').scrollIntoView()">
+        Explore My Website
+    </button>
+
+</div>
+
+    <h1>Hello, Welcome!</h1>
+    <p>Welcome to My Personal Website.</p>
+    <button onclick="document.getElementById('about').scrollIntoView()">Explore</button>
+</div>
+
+<section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+        <p>I am learning Web Development.</p>
+        <p>I love Technology and Computers.</p>
+    </div>
+</section>
+
+<section id="skills">
+    <h2>My Skills</h2>
+    <div class="card">
+        <p>HTML</p>
+        <p>CSS</p>
+        <p>Computer Skills</p>
+    </div>
+</section>
+
+
+<section id="contact">
+    <h2>Contact Me</h2>
+
+    <div class="card">
+
+        <p>Contact me through WhatsApp</p>
+
+        <a href="https://wa.me/91+6379816961"
+           target="_blank">
+            <button style="background:green;">
+                WhatsApp Me
+            </button>
+        </a>
+
+        <p>Instagram</p>
+
+        <a href="https://www.instagram.com/krish_22_10_?fqnt=MXF1MjFsamt3dGpmNQ==/"
+           target="_blank">
+            Instagram Profile
+        </a>
+
+        <p>Facebook</p>
+
+        <a href="https://www.facebook.com/share/1CP5xYx51y/"
+           target="_blank">
+            Facebook Profile
+        </a>
+
+        <p>Email</p>
+
+        <a href="mailto:example@gmail.com">
+            Send Email
+        </a>
+
+    </div>
+</section>
+
+    <h2>Contact Me</h2>
+    <div class="card">
+        <p>Email: example@gmail.com</p>
+    </div>
+</section>
+
+<footer>
+    <p>My Personal Website © 2026</p>
+</footer>
+
+</body>
+</html>
+
